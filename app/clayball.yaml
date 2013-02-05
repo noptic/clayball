@@ -1,0 +1,10 @@
+name:       clayball
+version:    0.1
+commands:
+    hello:
+        controller: daliaIT\clayball\command\PrintText
+        text: >      
+            Hello World 
+        help: >
+            Lorem Ipsum
+            semper sit

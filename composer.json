@@ -1,0 +1,32 @@
+{
+    "name": "dalia-it/clayball",
+    "description": "Turns controller classes into executable scripts.",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "authors": [
+        {
+            "name": "Oliver Anan",
+            "email": "oliver@ananit.de"
+        }
+    ],
+    "require": {
+        "symfony/console": "*",
+        "symfony/yaml": "*"
+    },
+    "extra":{
+        "dalia-it":{
+            "clayball":{
+                "bin": "/bin",
+                "applications":
+                    {
+                        "clayball":{
+                            "commands":{
+                                "build": "daliaIT\\clayball\\command\\Build"
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}
