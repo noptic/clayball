@@ -10,6 +10,7 @@
             "email": "oliver@ananit.de"
         }
     ],
+    "license": "MIT",
     "require": {
         "symfony/console": "*",
         "symfony/yaml": "*"
