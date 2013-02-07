@@ -1,5 +1,10 @@
 <?php
-require __DIR__."/../autoload.php";
-daliaIT\clayball\YamlAppParser::mk()
-->build(dirname(__DIR__).'/app/clayball.yaml')
-->run();
+call_user_func( function(){
+    $autoloader = require __DIR__."/../autoload.php";
+    daliaIT\clayball\YamlAppParser::mk()
+    ->build(
+        dirname(__DIR__).'/app/clayball.yaml',
+       array('loader' => $autoloader)
+    )
+    ->run();
+});

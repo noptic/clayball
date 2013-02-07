@@ -11,8 +11,9 @@ abstract class AppParser{
         $this->factory = $factory;
     }
     
-    public function build($path){
+    public function build($path, array $override=array()){
         $appData = $this->parseFile($path);
+        $appData = array_replace_recursive($appData, $override);
         return $this->factory->build($appData);
     }
         

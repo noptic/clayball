@@ -6,5 +6,12 @@ commands:
         text: >      
             Hello World 
         help: >
-            Lorem Ipsum
-            semper sit
+            A classic example command. 
+            
+    dump:
+        controller: daliaIT\clayball\command\Dump
+        help: >
+            This command dumps the command context.
+            A good way to test how arguments, context and
+            override are handled.
+            

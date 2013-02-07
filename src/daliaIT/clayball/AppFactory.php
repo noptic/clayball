@@ -45,6 +45,7 @@ class AppFactory{
         $app = new Application($name,$version);
         foreach($clayball['commands'] as $name => $context){
             $context['name'] = $name;
+            $context['raw'] = &$clayball;
             $controller = $context['controller'];
             $command = new $controller($context);
             if( isset($context['help']) ){
